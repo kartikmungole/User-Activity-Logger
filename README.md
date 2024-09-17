@@ -17,10 +17,27 @@ Custom Middleware (LogMiddleware): Captures request data and stores it in the Ac
 ActivityLog Model: A simple model designed to store user activity, including the following fields:
 ip_address: Stores the user's IP address.
 url: Stores the full URL that was accessed.
+
+**Middleware Functionality**
+**Logging Process**
+The custom middleware LogMiddleware is added to the MIDDLEWARE setting in settings.py. It intercepts each request, logs the request metadata (IP address, URL, and timestamp), and stores it in the ActivityLog model.
+
+**Here’s how it works**
+Request Interception: Each time a request is made to the server (e.g., visiting a page), the middleware captures the request before passing it to the corresponding view.
+
+**Logging Information**
+
+The IP address is obtained from request.META.get('REMOTE_ADDR').
+The URL is obtained from request.build_absolute_uri().
+The timestamp is automatically recorded when the entry is saved in the database.
+Database Storage: The captured data is stored in the ActivityLog model, where each request is logged as a separate entry.
 timestamp: Automatically records the time the request was made.
 Simple Views: Three basic views (Home, About, Contact) to simulate user activity across different pages.
 
 **Requirements**
 To run this project, you'll need:
+Python,
+Django,
+
 Python 3.x
 Django 3.x or higher
