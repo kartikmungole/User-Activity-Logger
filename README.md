@@ -33,16 +33,16 @@ Request Interception: Each time a request is made to the server (e.g., visiting 
 
 
 **Logging Information**
-The IP address is obtained from request.META.get('REMOTE_ADDR').
-The URL is obtained from request.build_absolute_uri().
-The timestamp is automatically recorded when the entry is saved in the database.
-Database Storage: The captured data is stored in the ActivityLog model, where each request is logged as a separate entry.
-timestamp: Automatically records the time the request was made.
-Simple Views: Three basic views (Home, About, Contact) to simulate user activity across different pages.
+* The IP address is obtained from request.META.get('REMOTE_ADDR').
+* The URL is obtained from request.build_absolute_uri().
+* The timestamp is automatically recorded when the entry is saved in the database.
+* Database Storage: The captured data is stored in the ActivityLog model, where each request is logged as a separate entry.
+* timestamp: Automatically records the time the request was made.
+* Simple Views: Three basic views (Home, About, Contact) to simulate user activity across different pages.
 
 
 **Requirements**
 To run this project, you'll need:
-Python,
-Django,
+* Python,
+* Django,
 
