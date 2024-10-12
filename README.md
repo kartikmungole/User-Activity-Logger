@@ -1,7 +1,5 @@
 **Django User Activity Logger**
-
 A simple Django project that demonstrates how to use middleware to log user activity. The project logs each incoming HTTP request, including the IP address, URL accessed, and timestamp of the request.
-
 
 
 **Features**
@@ -30,7 +28,7 @@ The custom middleware LogMiddleware is added to the MIDDLEWARE setting in settin
 
 
 **Here’s how it works**
-Request Interception: Each time a request is made to the server (e.g., visiting a page), the middleware captures the request before passing it to the corresponding view.
+* Request Interception: Each time a request is made to the server (e.g., visiting a page), the middleware captures the request before passing it to the corresponding view.
 
 
 **Logging Information**
