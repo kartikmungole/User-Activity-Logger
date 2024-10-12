@@ -40,7 +40,6 @@ Request Interception: Each time a request is made to the server (e.g., visiting 
 * timestamp: Automatically records the time the request was made.
 * Simple Views: Three basic views (Home, About, Contact) to simulate user activity across different pages.
 
-
 **Requirements**
 To run this project, you'll need:
 * Python,
