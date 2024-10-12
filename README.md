@@ -10,12 +10,12 @@ A simple Django project that demonstrates how to use middleware to log user acti
 
 
 ## **Project Functionality**
-Middleware: The custom middleware logs user requests, including their IP address, visited URL, and the time of access.
-Admin Panel: View the logs through the Django admin interface.
-Simple Views: The project includes basic pages such as Home, About, and Contact to test the logging functionality.
+* Middleware: The custom middleware logs user requests, including their IP address, visited URL, and the time of access.
+* Admin Panel: View the logs through the Django admin interface.
+* Simple Views: The project includes basic pages such as Home, About, and Contact to test the logging functionality.
 
 
-**Architecture**
+## **Architecture**
 Custom Middleware (LogMiddleware): Captures request data and stores it in the ActivityLog model.
 ActivityLog Model: A simple model designed to store user activity, including the following fields:
 ip_address: Stores the user's IP address.
