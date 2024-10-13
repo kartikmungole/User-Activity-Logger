@@ -16,13 +16,13 @@ A simple Django project that demonstrates how to use middleware to log user acti
 
 
 ## **Architecture**
-Custom Middleware (LogMiddleware): Captures request data and stores it in the ActivityLog model.
-ActivityLog Model: A simple model designed to store user activity, including the following fields:
+* Custom Middleware (LogMiddleware): Captures request data and stores it in the ActivityLog model.
+* ActivityLog Model: A simple model designed to store user activity, including the following fields:
 ip_address: Stores the user's IP address.
 url: Stores the full URL that was accessed.
 
 
-**Middleware Functionality**
+## **Middleware Functionality**
 **Logging Process**
 * The custom middleware LogMiddleware is added to the MIDDLEWARE setting in settings.py. It intercepts each request, logs the request metadata (IP address, URL, and timestamp), and stores it in the ActivityLog model.
 
