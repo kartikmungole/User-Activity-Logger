@@ -31,7 +31,7 @@ A simple Django project that demonstrates how to use middleware to log user acti
 * Request Interception: Each time a request is made to the server (e.g., visiting a page), the middleware captures the request before passing it to the corresponding view.
 
 
-**Logging Information**
+## **Logging Information**
 * The IP address is obtained from request.META.get('REMOTE_ADDR').
 * The URL is obtained from request.build_absolute_uri().
 * The timestamp is automatically recorded when the entry is saved in the database.
@@ -39,7 +39,7 @@ A simple Django project that demonstrates how to use middleware to log user acti
 * timestamp: Automatically records the time the request was made.
 * Simple Views: Three basic views (Home, About, Contact) to simulate user activity across different pages.
 
-**Requirements**
+## **Requirements**
 To run this project, you'll need:
 * Python,
 * Django,
