@@ -24,7 +24,7 @@ url: Stores the full URL that was accessed.
 
 **Middleware Functionality**
 **Logging Process**
-The custom middleware LogMiddleware is added to the MIDDLEWARE setting in settings.py. It intercepts each request, logs the request metadata (IP address, URL, and timestamp), and stores it in the ActivityLog model.
+* The custom middleware LogMiddleware is added to the MIDDLEWARE setting in settings.py. It intercepts each request, logs the request metadata (IP address, URL, and timestamp), and stores it in the ActivityLog model.
 
 
 **Here’s how it works**
