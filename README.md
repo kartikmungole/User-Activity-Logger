@@ -9,6 +9,8 @@ A simple Django project that demonstrates how to use middleware to log user acti
 * Simple pages like Home, About, and Contact for testing middleware.
 
 
+
+
 ## **Project Functionality**
 * Middleware: The custom middleware logs user requests, including their IP address, visited URL, and the time of access.
 * Admin Panel: View the logs through the Django admin interface.
